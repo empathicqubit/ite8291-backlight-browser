@@ -332,7 +332,9 @@ const keyboardLayout = () => {
             e('label', { for: "filename" }, "Filename:"),
             e('input', { type: "text", id: "filename", oninput: (e) => { state.filename = e.target.value } }),
             e("button", { className: "reset", onclick: () => saveFile() }, "Save"),
+            e('label', null, "Load:"),
             e("select", { onchange: (e) => loadFile(e.target.value) },
+                e('option', null, 'Choose'),
                 state.saved.map(x =>
                     e('option', { value: x.filename }, x.filename)
                 )
