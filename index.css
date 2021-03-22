@@ -1,0 +1,48 @@
+
+input[type="color"] {
+    width: 5em;
+    height: 5em;
+}
+
+button.reset {
+    width: 5em;
+    height: 5em;
+}
+
+.controls {
+    display: flex;
+    vertical-align: middle;
+}
+
+label {
+    margin: auto .25em auto 1em;
+}
+
+.keyboard-layout {
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    min-width: 50em;
+}
+
+.keyboard-layout .row {
+    display: table;
+}
+
+.keyboard-layout .key {
+    box-sizing: border-box;
+    padding: .5em;
+    display: table-cell;
+    width: 3em;
+    height: 3em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.keyboard-layout .key.selected {
+    border: 2px dashed blue
+}
